@@ -5,7 +5,7 @@ Indian Institute of Information Technology, Raichur
 
 ## Project 1: Brain Tumor Segmentation using Thresholding
 
-## 📂 Dataset
+## Dataset
 
 - **Dataset Type:** Brain MRI Tumor Dataset  
 - **Annotation Format:** YOLO Segmentation (Polygon-based)  
@@ -18,7 +18,7 @@ https://www.kaggle.com/datasets/bilalakgz/brain-tumor-mri-dataset
 
 ---
 
-## ⚙️ Methodology
+## Methodology
 
 ### Ground Truth Generation
 YOLO polygon annotations are converted into **binary tumor masks** using polygon filling. This allows pixel-wise comparison with predicted segmentations.
@@ -35,7 +35,7 @@ These metrics measure the overlap between predicted tumor regions and ground tru
 
 ---
 
-## 📊 Results
+## Results
 
 | Method | Dice Score | Jaccard Index |
 |------|-----------|---------------|
@@ -44,7 +44,7 @@ These metrics measure the overlap between predicted tumor regions and ground tru
 
 ---
 
-## 🧠 Key Observations
+## Key Observations
 
 - Otsu thresholding performed better when tumor intensity was clearly distinguishable.
 - Sauvola thresholding was sensitive to noise and anatomical edges.
